@@ -109,38 +109,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-  position: fixed top;
-  display: flex;
-  flex-direction: row;
-  top: 50px;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 15px;
-  height: 80%;
-  display: none;
-}
 
-/* #navbar {
-  height: 80px;
-  background-color: rgba(61, 60, 60, 0.4);
-  backdrop-filter: blur(5px);
-  text-align: center;
-} */
-
-@media (max-width: 991px) {
-  #header {
-    width: 300px;
-    background: #fff;
-    border-right: 1px solid #e6e9ec;
-    border-radius: 20px;
-    left: -300px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-  }
-}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
