@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: #45505b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #a4b494;
   text-decoration: none;
 }
 
@@ -393,7 +393,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #45505b;
 }
 
 .about .content ul {
