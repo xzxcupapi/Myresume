@@ -1,23 +1,23 @@
 <?php
-$receiving_email_address = 'arjunasatria1717@gmail.com';
+// Sertakan kelas PHP_Email_Form
+include('./assets/vendor/php-email-form/php-email-form.php');
 
-if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
-    include($php_email_form);
+// Buat objek PHP_Email_Form
+$emailForm = new PHP_Email_Form();
 
-    $contact = new PHP_Email_Form;
-    $contact->ajax = true;
+// Atur propertinya
+$emailForm->to = 'tujuan@email.com';
+$emailForm->from_name = 'Nama Pengirim';
+$emailForm->from_email = 'pengirim@email.com';
+$emailForm->subject = 'Subjek Email';
 
-    $contact->to = $receiving_email_address;
-    $contact->from_name = $_POST['name'];
-    $contact->from_email = $_POST['email'];
-    $contact->subject = $_POST['subject'];
+// Tambahkan pesan ke badan email
+$emailForm->add_message('Isi pesan email disini.', 'Label Konten');
 
-    $contact->add_message($_POST['name'], 'From');
-    $contact->add_message($_POST['email'], 'Email');
-    $contact->add_message($_POST['message'], 'Message', 10);
-
-    echo $contact->send();
+// Kirim email
+if ($emailForm->send()) {
+    echo 'Email berhasil dikirim!';
 } else {
-    die('Unable to load the "PHP Email Form" Library!');
+    echo 'Gagal mengirim email.';
 }
 ?>
