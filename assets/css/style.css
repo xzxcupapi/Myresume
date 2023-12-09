@@ -514,7 +514,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #a4b494;
   position: relative;
 }
 
@@ -524,7 +524,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: #a4b494;
   margin-bottom: 10px;
 }
 
@@ -558,7 +558,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid #a4b494;
 }
 
 /*--------------------------------------------------------------
